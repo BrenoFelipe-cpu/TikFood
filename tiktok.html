@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <title>TikTok Clone</title>
+ 
+  </head>
+  <body>
+    <div class="app__videos"">
+      
+      <div class="video">
+        <image class="video__player" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGl6emF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60"></i,age>
+        <div class="videoSidebar">
+          <div class="videoSidebar__button">
+            <span class="material-icons">favorite_border</span>
+            <p>100k</p>
+            </div>
+          <div class="videoSidebar__button">
+            <span class="material-icons">message</span>
+            <p>123</p>
+            </div>
+          <div class="videoSidebar__button">
+          <span class="material-icons">share</span>
+          <p>3k</p>
+          </div>
+
+        </div>
+       
+        <div class="videoFooter">
+          <div class="videofooter__text">
+            <h3>Pizzaria X</h3>
+            <p class="videoFooter__description">Venha comprar aqui sua pizza a qualquer hora!
+            </p>
+            <div class="videoFOoter__ticket">
+              <span class="material-icons videoFooter__icon">music_note</span>
+              <marquee>Nome da Música</marquee>
+            </div>
+          </div>
+     </div>      
+
+
+    
+
+        <div class="video">
+          <image class="video__player" src="https://images.unsplash.com/photo-1611143669185-af224c5e3252?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80"></image>
+          <div class="videoSidebar">
+            <div class="videoSidebar__button">
+              <span class="material-icons">favorite_border</span>
+              <p>100k</p>
+              </div>
+            <div class="videoSidebar__button">
+              <span class="material-icons">message</span>
+              <p>123</p>
+              </div>
+            <div class="videoSidebar__button">
+            <span class="material-icons">share</span>
+            <p>3k</p>
+            </div>
+  
+          </div>
+         
+          <div class="videoFooter">
+            <div class="videofooter__text">
+              <h3>Soft & Wet</h3>
+              <p class="videoFooter__description">Seu lugar para pedir seu Sushi favorito.
+              </p>
+              <div class="videoFOoter__ticket">
+                <span class="material-icons videoFooter__icon">music_note</span>
+                <marquee>Nome da Música</marquee>
+              </div>
+            </div>
+       </div>      
+
+  
+          </div>
+
+      </div>
+      <script>
+        const videos = document.querySelectorAll('video');
+  
+  
+        for (const video of videos) {
+          video.addEventListener('click', function () {
+            console.log('clicked');
+            if (video.paused) {
+              video.play();
+            } else {
+              video.pause();
+            }
+          });
+        }
+      </script>
+  </body>
+ </html>

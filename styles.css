@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgb(211, 211, 108), rgb(110, 165, 110));
+}
+
+.login{
+    background: rgba(90, 110, 41, 0.5);
+    border-radius: 10px;
+    width: 400px;
+    padding: 40px;
+}
+
+.login h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.login .box-user{
+    position: relative;
+}
+.login .box-user input{
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.login .box-user label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.login .box-user input:focus~label,
+.login .box-user input:valid~label
+{
+    top: -20px;
+    left: 0;
+    color: #3e4126;
+    font-size: 12px;
+}
+.forget{
+    font-size: 12px;
+    color: #5d680f;
+    float: right;
+
+}
+.btr{
+    position: relative;
+    display: inline-block;
+    padding: 12px 20px;
+    color: #3e4126;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-top: 20px;
+    transition: .5s;
+    
+}
+
+.btr:hover{
+    background: #3e4126;
+    border-radius: 5px;
+    color: #5d680f;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  /* Define que a rolagem será vertical */
+  html {
+    scroll-snap-type: y mandatory;
+  }
+  
+  
+  body {
+    color: white;
+    background-color: black;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  
+
+.app__videos {
+    position: relative;
+    height: 750px;
+    background-color: white;
+    overflow: scroll;
+    width: 100%;
+    max-width: 400px;
+    scroll-snap-type: y mandatory;
+    border-radius: 20px;
+  }
+  
+  .app__videos::-webkit-scrollbar{
+    display: none;
+  }
+
+.app__videos{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+.video {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  scroll-snap-align: start;
+}
+
+
+
+.video__player {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+.videoSidebar {
+  position: absolute;
+  top: 48%;
+  right: 10px;
+}
+
+
+.videoSidebar .material-icons {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
+.videoSidebar__button {
+  padding: 20px;
+  text-align: center;
+}
+
+
+.videoFooter {
+  position: relative;
+  bottom: 150px;
+  margin-left: 20px;
+  color: white;
+  display: flex;
+}
+
+
+@keyframes spinTheRecord {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.videoFooter__record {
+  animation: spinTheRecord infinite 5s linear;
+  height: 50px;
+  filter: invert(1);
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+
+.videoFooter__text {
+  flex: 1;
+}
+
+
+.videoFooter__text h3 {
+  padding-bottom: 20px;
+}
+
+
+.videoFooter__icon {
+  position: absolute;
+}
+
+
+.videoFooter__ticker {
+  width: 400px;
+  display: flex;
+  align-items: center;
+}
+
+
+.videoFooter__ticker marquee {
+  height: fit-content;
+  margin-left: 30px;
+  width: 70%;
+}
+
+
+.videoFooter__description {
+  padding-bottom: 20px;
+}
+
+
+@media (max-width: 425px) {
+  .app__videos {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 0;
+  }
+}
+
+
